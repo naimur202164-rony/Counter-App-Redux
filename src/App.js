@@ -12,6 +12,10 @@ function App() {
   const decrement=()=>{
       dispatch({type:"DEC"})
   }
+
+  const addBy=()=>{
+    dispatch({type:"ADD",payload:10})
+  }
   return (
      
 
@@ -22,6 +26,8 @@ function App() {
     <br/> 
       <button onClick={increment} >++</button>
       <button onClick={decrement}>--</button>
+      <br/>
+      <button onClick={addBy}>Add valur</button>
     </div>
 
 
